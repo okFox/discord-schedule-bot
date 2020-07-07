@@ -1,0 +1,27 @@
+{
+  "name": "discord-schedule-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot to help GMs and players know when games are coming up.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okFox/discord-schedule-bot.git"
+  },
+  "keywords": [
+    "Discord",
+    "bot"
+  ],
+  "author": "Sarah Mayfield",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okFox/discord-schedule-bot/issues"
+  },
+  "homepage": "https://github.com/okFox/discord-schedule-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  }
+}
