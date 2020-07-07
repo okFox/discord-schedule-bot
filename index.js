@@ -1,12 +1,19 @@
 require('dotenv').config();
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 const TOKEN = process.env.TOKEN;
 
-bot.once('ready', () => {
+client.once('ready', () => {
 	console.log('Ready!');
 });
 
-bot.login(TOKEN);
+client.on('message', message => {
+	if (message.content === '!ping') {
+    // send back "Pong." to the channel the message was sent in
+    message.channel.send('Pong.');
+  }
+});
+
+client.login(TOKEN);
 
